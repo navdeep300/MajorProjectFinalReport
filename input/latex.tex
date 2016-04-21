@@ -1,0 +1,85 @@
+
+
+\LaTeX, I have used this tool for preparing my six weeks training report and i found it excellent. So this time again i decided to use it for my report.
+\LaTeX{} (pronounced /ˈleɪtɛk/, /ˈleɪtɛx/, /ˈlɑːtɛx/, or /ˈlɑːtɛk/) is a 
+document markup language and document preparation system for the \TeX{} 
+typesetting  program. Within the typesetting system, its name is styled 
+as \LaTeX.
+
+\image{0.9}{images/donald.png}{Donald Knuth, Inventor Of \TeX{} 
+typesetting system}
+
+\noindent Within the typesetting system, its name is styled as \LaTeX. The term 
+\LaTeX{} refers only to the language in which documents are written, 
+not to the editor used to write those documents. In order to create a 
+document in \LaTeX, a .tex file must be created using some form of text 
+editor. While most text editors can be used to create a \LaTeX{} document, 
+a number of editors have been created specifically for working with \LaTeX.\\
+
+\noindent \LaTeX{} is most widely used by mathematicians, scientists, 
+engineers, philosophers, linguists, economists and other scholars in 
+academia. As a primary or intermediate format, e.g., translating DocBook 
+and other XML-based formats to PDF, \LaTeX{} is used because of the 
+high quality of typesetting achievable by \TeX. The typesetting system 
+offers programmable desktop publishing features and extensive facilities 
+for automating most aspects of typesetting and desktop publishing, 
+including numbering and cross-referencing, tables and figures, 
+page layout and bibliographies.\\
+
+\noindent \LaTeX{} is intended to provide a high-level language that
+accesses the power of \TeX. \LaTeX{} essentially comprises a
+collection of \TeX{} macros and a program to process \LaTeX documents. 
+Because the \TeX{} formatting commands are very low-level, it is usually 
+much simpler for end-users to use \LaTeX{}.
+
+
+\section{Typesetting}
+\LaTeX{} is based on the idea that authors should be able to focus on 
+the content of what they are writing without being distracted by its 
+visual presentation. In preparing a \LaTeX{} document, the author 
+specifies the logical structure using familiar concepts such as 
+chapter, section, table, figure, etc., and lets the \LaTeX{} system 
+worry about the presentation of these structures. It therefore 
+encourages the separation of layout from content while still allowing 
+manual typesetting adjustments where needed. 
+
+\begin{verbatim}
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\title{\LaTeX}
+\date{}
+\begin{document}
+  \maketitle 
+  \LaTeX{} is a document preparation system 
+  for the \TeX{} typesetting program.
+   \par 
+   $E=mc^2$
+\end{document}
+\end{verbatim}
+
+\subsection{Installing \LaTeX{} on System}
+Installation of \LaTeX{} on personal system is quite easy. As i have used \LaTeX{} on Ubuntu 14.04 so i am discussing the installation steps for Ubuntu 14.04 here:\\
+\begin{itemize}
+\item Go to terminal and type\\
+\textit{sudo apt-get install texlive-full}
+\item Your Latex will be installed on your system and you can check for manual page by typing.\\
+\textit{man latex}
+in terminal which gives manual for latex command.
+\item To do very next step now one should stick this to mind that the document which one is going to produce is written in any type of editor whether it may be your most common usable editor Gedit or you can use vim by installing first vim into your system using command.\\
+\textit{sudo apt-get install vim}
+\item After you have written your document it is to be embedded with some set of commands that Latex uses so as to give a structure to your document. Note that whenever you wish your document to be looked into some other style just change these set of commands.
+\item When you have done all these things save your piece of code with .tex format say test.tex. Go to terminal and type\\
+\textit{latex path of the file test.tex Or pdflatex path of the file test.tex\\ eg: pdflatex test.tex}
+for producing pdf file simultaneously.\\
+After compiling it type command\\\\
+\textit{evince filename.pdf\\ eg: evince test.pdf}\\
+To see output pdf file. 
+\end{itemize}
+
+\subsection{Graphical Editors for \LaTeX{}}
+\LaTeX{} is not restricted to command line only there are so many graphical based editors available to be used. These GUi based editors provide an easy interface to user so as to do typesetting in an efficient manner. Some of them are listed below:
+\begin{itemize}
+\item Tex Maker
+\item LED 
+\end{itemize}
+And many more but the preferred method to produce \LaTeX{} document is through console mode only.
