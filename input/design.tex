@@ -80,7 +80,7 @@ After getting the entities from the input file the entities are splitted and the
 
 Following are the screenshots of the workflow of the project.
 
-As shown in the Figure \ref{fig:input}, in the project root directory, there is a file called in.txt which is supposed to be input file that the user will dealt with for creating drawings. Currently it contains a single line that is saying to create a wall with specifications like length, height and x and y coordinates of the starting point of the wall in the Cartesian plane.
+\noindent As shown in the Figure \ref{fig:input}, in the project root directory, there is a file called in.txt which is supposed to be input file that the user will dealt with for creating drawings. Currently it contains a single line that is saying to create a wall with specifications like length, height and x and y coordinates of the starting point of the wall in the Cartesian plane.\\
 
 \begin{figure}
 \centering
@@ -89,8 +89,8 @@ As shown in the Figure \ref{fig:input}, in the project root directory, there is 
 \label{fig:input}
 \end{figure}
 
-Then we will compile the project with the help of cmake and make that can be seen in Figure \ref{fig:compile}. It uses the cmake configuration file CMakeLists.txt that's present in the root directory of the project. We have used here the out-of-source build method. That separates the build directory to be separated from the actual source code. For that, a separate directory is created and cmake and make commands are executed there.
-After successful build, an executable file will be created with the name BuildD (as specified in the CMakeLists.txt). Hence, we can execute that executable file using ./BuildD.
+\noindent Then we will compile the project with the help of cmake and make that can be seen in Figure \ref{fig:compile}. It uses the cmake configuration file CMakeLists.txt that's present in the root directory of the project. We have used here the out-of-source build method. That separates the build directory to be separated from the actual source code. For that, a separate directory is created and cmake and make commands are executed there.
+After successful build, an executable file will be created with the name BuildD (as specified in the CMakeLists.txt). Hence, we can execute that executable file using ./BuildD.\\
 
 \begin{figure}
 	\centering
@@ -99,7 +99,7 @@ After successful build, an executable file will be created with the name BuildD 
 	\label{fig:compile}
 \end{figure}
 
-Now let's look inside the project and think what's going on actually in there. First the in.txt file is parsed using regular expressions (using Qt libraries) and splitted and joined and stored as an semi-processed output in out.txt file as seen in the Figure \ref{fig:token}. Basically input is divided into smaller tokens and stored in out.txt.
+\noindent Now let's look inside the project and think what's going on actually in there. First the in.txt file is parsed using regular expressions (using Qt libraries) and splitted and joined and stored as an semi-processed output in out.txt file as seen in the Figure \ref{fig:token}. Basically input is divided into smaller tokens and stored in out.txt.\\
 
 \begin{figure}
 \centering
@@ -108,7 +108,7 @@ Now let's look inside the project and think what's going on actually in there. F
 \label{fig:token}
 \end{figure}
 
-We can also work in Qt Creator. It is an IDE for C++ application development that's truly an helping aid with its nice and helping features. You can see the user interface of the Qt Creator in Figure \ref{fig:qt}. It contains a green play button at bottom-left side. One can click that button to build the project and execute the executable file with a single move.
+\noindent We can also work in Qt Creator. It is an IDE for C++ application development that's truly an helping aid with its nice and helping features. You can see the user interface of the Qt Creator in Figure \ref{fig:qt}. It contains a green play button at bottom-left side. One can click that button to build the project and execute the executable file with a single move.\\
 
 \begin{figure}
 \centering
@@ -117,7 +117,7 @@ We can also work in Qt Creator. It is an IDE for C++ application development tha
 \label{fig:qt}
 \end{figure}
 
-At the end, we have the final output that will be looking for: the DXF file. It's stored there in the build directory as seen in the Figure \ref{fig:dxf}. It's named as output.dxf. We can open that file in LibreCAD directly from the command-line.
+\noindent At the end, we have the final output that will be looking for: the DXF file. It's stored there in the build directory as seen in the Figure \ref{fig:dxf}. It's named as output.dxf. We can open that file in LibreCAD directly from the command-line.\\
 
 
 \begin{figure}
@@ -127,7 +127,7 @@ At the end, we have the final output that will be looking for: the DXF file. It'
 \label{fig:dxf}
 \end{figure}
 
-Now that our DXF file output.dxf is created and we have issued a command from command-line to open that file in LibreCAD. It can be seen in LibreCAD as shown in Figure \ref{fig:lc}. Although one might need to click the "Auto zoom" feature in LibreCAD to directly view the contents fit to the screen window.
+\noindent Now that our DXF file output.dxf is created and we have issued a command from command-line to open that file in LibreCAD. It can be seen in LibreCAD as shown in Figure \ref{fig:lc}. Although one might need to click the "Auto zoom" feature in LibreCAD to directly view the contents fit to the screen window.
 
 \begin{figure}
 \centering
