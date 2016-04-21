@@ -1,0 +1,82 @@
+\documentclass[12pt]{article}
+\usepackage[print,nopanel]{pdfscreen}
+\begin{print}
+\usepackage{lastpage}
+\usepackage{macro/macro}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{fancyhdr}
+\usepackage{verbatim}
+\lhead{\large\bfseries TCC Automation}
+\usepackage[left=2.5cm, right=1.5cm, top=2.5cm, bottom=1.5cm]{geometry}
+\pagestyle{fancy}
+\end{print}
+\margins{.5cm}{.5cm}{.5cm}{.5cm}
+\begin{screen}
+
+\renewcommand{\encodingdefault}{T1}
+\usepackage{setspace}
+\linespread{1.5}
+\renewcommand{\rmdefault}{ptm}
+\end{screen}
+\screensize{8cm}{9cm}
+\overlay{overlay8.pdf}
+\usepackage{graphicx}
+
+\begin{document}
+\input{input/titlepage.tex}
+\begin{screen}
+\ppttitle
+\end{screen}
+\footskip 0.7cm
+\thispagestyle{empty} 
+\pagetitle
+\newpage
+\pagenumbering{Roman}
+\cfoot{\thepage}
+
+\input{input/acknowledgement.tex}
+\newpage
+
+\input{input/abstract.tex}
+
+\newpage
+\tableofcontents
+\newpage
+\listoffigures
+\newpage
+
+\pagenumbering{arabic}
+\cfoot{\thepage}
+
+\newpage
+\section{Introduction To Organisation}
+\input{input/organisation.tex}
+\newpage
+\section{\LaTeX}
+\input{input/latex.tex}
+\newpage
+\section{Project Preview}
+\input{input/project-preview.tex}
+\newpage
+\section{My Project}
+\input{input/myproject.tex}
+%\input{input/tools.tex}
+%\input{input/design.tex}
+%\newpage
+\newpage
+%\section{Implementation}
+%\input{input/implementation.tex}
+\section{My other tasks}
+\input{input/extra-work.tex}
+\newpage
+\clearpage
+\section{Bibliography}
+\input{input/bibliography.tex}
+\begin{screen}
+%\newpage
+%\input{input/link.tex}
+\end{screen}
+
+\end{document}
+

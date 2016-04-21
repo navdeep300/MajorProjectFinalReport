@@ -1,0 +1,184 @@
+
+\subsubsection{Registered Clients Register}
+It becomes easy to manage things when placed collectively. 
+Priviously there was no facility in software to see all the registered 
+clients  on single click, were saved only at the backend Now I have added 
+this feature in registered clients register under "Registers" menu of software. 
+Clicking on which user can see a list of all registered clients with their 
+respective details, can see the previous work of any client, add new work/job from 
+there only.
+\subsubsection{Formats of reports}
+Like medical reports, after the testing of materials like Steel, Cement, Bricks,
+Ground Water, Wood and Tiles etc., proper reports are made by software itself.
+I made formats of reports for different materials as per the tests performed 
+on a particular material.
+\subsubsection{Phonetic Search}
+Implementing Phonetic Search in the software was the actual work to be done.
+Whenever there is a mob there is a need to find, a need to search. 
+A search is the organized pursuit of information. Somewhere in a collection
+of documents, Web pages, and other sources, there is information that you want
+to find, but you have no idea where it is. 
+
+Ever since the world wide web became the engine of our lives, search has been 
+the holy grail for developers and companies. Search is essential, search is 
+important, we keep searching the whole day, some say even our life is nothing
+but a search itself. 
+
+To search anything from WWW, we
+needed search engines. A web Search engine is a softwares  that is desgned 
+to search information from World Wide Web i.e they are the websites that 
+fetch information from other websites. All search engines use algorithms to 
+provide the required results. The data they search for is indexed and is 
+easy to find for user, but its work flow is much complicated.
+\begin{figure}[h]
+{\bf History:} 
+Beginning with Archie in 1990, considered the first search engine, moving
+on to Excite and Lycos and Infoseek, by the mid 90s there was a veritable 
+flood of search engines, particularly after Google showed how it should be 
+done in 1996. The complexity of the algorithms was now matched only by the
+ voracious appetite of searchers as the number of pages to be indexed ran 
+into billions. Invariably, a lot of them positioned themselves as specialized
+engines—for kids or jobs or tech or entertainment. As the original super spider
+, AltaVista, shuts down, here’s a brief history of some of the better known
+search engines through the years:
+\end{figure}
+\begin{itemize}
+\item 1990: Archie—the very first search engine
+\item 1991: Veronica and Jughead
+\item 1992: Vlib
+\item 1993: Excite and World wide web wanderer
+\item 1994: AltaVista, Galaxy, Yahoosearch, Infoseek, Webcrawler, Lycos
+\item 1995: Looksmart
+\item 1996: Google, HotBot, Inktomi
+\item 1997: Ask.com
+\item 1998: MSN; dmoz
+\item 1999: Alltheweb
+\item 2006: Microsoft Livesearch
+\item 2009: Microsoft Bing
+\end{itemize}
+
+
+{\bf Role in TCC Automation Software:}
+Software has a huge database, and a pain to find something if there's no search 
+capability. I was given the task to relieve this pain. Searching capability and with
+phonetic search, makes it easy to find the resembling spellings too.
+
+{\bf Previous search:}
+Previously there was a search module in this software 
+wich was a live search. There were django queries that fetched the entered
+keywords from database. A django function was used there. The results of that search were 
+unexpected. User had to enter a space before the keywords. It didn't even search for all 
+the matches. It was totally inefficient and staff members also wanted something very good that
+could make their work easy.
+
+%\subsubsection{Additional note}
+%There was static note section in performa bill which contained some
+%instructions for client. These instructions include the following:\\
+%\begin{itemize}
+%\item Payment may be made via D.D./Cash/Online in favour of Director,
+%Guru Nanak Dev Engg. College, Ludhiana.
+%\item The Testing/Work shall be done on Receipt of this payment.
+%\item Three Labourers for soil testing work to be provided by the 
+%Department/Client at each site.
+%\end{itemize}
+
+\subsubsection{Implementation of phonetic search}
+To implement phonetic search in the software, a soundex algorithm is used.
+Soundex is a phonetic algorithm for indexing names by sound, as pronounced 
+in English. The Soundex heuristic can be used for identifying names that 
+sound alike but are spelled differently. The Soundex algorithm is a standard 
+feature of MS SQL and Oracle database management systems to search for similar 
+sounding names. 
+\begin{figure}[h]
+\centering \includegraphics[scale=0.60]{images/table.png}
+\caption{Soundex codes}
+\end{figure}
+
+Here if we are searching for the name “Smith” or “Smythe”, while the words are
+ different, the pronunciation is the same. The Soundex signature for both is the 
+same “S530”.
+
+\begin{itemize}
+\item Following are the steps to implement the algorithm: 
+\item Ignore all characters in the string being encoded except for the English letters,
+ A to Z.
+\item The first letter of the Soundex code is the first letter of the string being encoded.
+\item After the first letter in the string, do not encode vowels or the letters H, W and Y.
+\item Assign a numeric digit between one and six to all letters except the first using the 
+following mappings:
+
+    1: B, F, P or V
+
+    2: C, G, J, K, Q, S, X, Z
+
+    3: D, T
+
+    4: L
+
+    5: M, N
+
+    6: R
+
+\item Where any adjacent digits are the same, remove all but one of those digits unless a vowel,
+ H, W or Y was found between them in the original text.
+
+\item Force the code to be four characters in length by padding with zero characters or by truncation.
+\end{itemize}
+
+\subsubsection{Future scope:}
+
+To implement a better search in a software, or a website, one need to set the 
+requirements about what kind of searching algos can be implemented and what 
+is the requirement. There are various searching techniques and algorithms
+which could be used and were studied: 
+\begin{enumerate} 
+\item Autocomplete
+\item Spelling suggestions
+\end{enumerate}
+
+\subsubsection{Adding New Calendar}
+Looks of a software matter a lot, because it has direct impact 
+on user's mind. The calendar previously used was not proper. Month and
+year were not even visible properly. Here is the difference.
+\begin{figure}[ht]
+\centering
+\begin{minipage}[b]{0.45\linewidth}
+\includegraphics[scale=0.70]{images/calp.jpg}
+\end{minipage}
+\quad
+\begin{minipage}[b]{0.45\linewidth}
+\includegraphics[scale=0.64]{images/caln.jpg}
+\end{minipage}
+\caption{Comparison of previous(left) and new(right) calendar}
+\end{figure}
+\newpage
+\subsubsection{Installation Script}
+It becomes very tedious to install any software manualy and then remove 
+lot of errors and check missing dependencies. Because its Autiomation 
+Software, it's installation needed to be automated. I have created a 
+bash script, using which anyone can install it easily. \\
+\newpage
+\begin{figure}[h]
+
+{\bf Insatallation design:}
+
+\centering \includegraphics[scale=0.43]{images/inst4.png}
+\caption{(a)Flow Chart for Installation}
+\end{figure}
+\newpage
+\begin{figure}[h]
+\centering \includegraphics[scale=0.40]{images/inst3.png}
+\caption{(b)Flow Chart for Installation}
+\end{figure}
+\newpage
+\newpage
+\begin{figure}[h]
+\centering \includegraphics[scale=0.40]{images/inst2.png}
+\caption{(c)Flow Chart for Installation}
+\end{figure}
+\newpage
+\begin{figure}[h]
+\centering \includegraphics[scale=0.40]{images/inst1.png}
+\caption{(d)Flow Chart for Installation}
+\end{figure}
+\newpage
