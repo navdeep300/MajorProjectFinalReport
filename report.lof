@@ -1,0 +1,14 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces \LaTeX {} Logo}}{5}{figure.1.1}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Donald Knuth, Inventor Of T\kern -.1667em\lower .5ex\hbox {E}\kern -.125emX\spacefactor \@m {} typesetting system}}{5}{figure.1.2}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Input file}}{15}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Command-line compilation}}{16}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Tokenized intermediate file}}{16}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Qt interface}}{17}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Opening DXF in LibreCAD from command-line}}{17}{figure.3.5}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces DXF opened in LibreCAD}}{18}{figure.3.6}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsfinish 

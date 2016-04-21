@@ -1,0 +1,157 @@
+\section{Feasibility Analysis}
+Feasibility analysis aims to uncover the strengths and weaknesses of 
+a project. In its simplest term, the two criteria to judge feasibility 
+are cost required and value to be attained. As such, a well-designed 
+feasibility analysis should provide a historical background of the 
+project, description of the project or service, details of the 
+operations and management and legal requirements. Generally, feasibility 
+analysis precedes technical development and project implementation. 
+There is some feasibility factors by which we can determine that 
+project is feasible or not:
+\begin{itemize}
+\item {\bf{Technical feasibility}}: Technological feasibility is carried 
+out to determine whether the project has the capability, in terms of 
+software, hardware, personnel to handle and fulfill the user 
+requirements. The assessment is based on an outline design of system 
+requirements in terms of Input, Processes, Output and Procedures. Elearning system is technically feasible as it is built up in Open 
+Source Environment and thus it can be run on any Open Source platform.
+\item {\bf{Economic feasibility}}: Economic analysis is the most 
+frequently used method to determine the cost/benefit factor for 
+evaluating the effectiveness of a new system. In this analysis we 
+determine whether the benefit is gained according to the cost invested 
+to develop the project or not. If benefits outweigh costs, only then 
+the decision is made to design and implement the system. It is 
+important to identify cost and benefit factors, which can be categorized 
+as follows:
+\begin{enumerate}
+\item Development costs.
+\item Operating costs.
+\end{enumerate}
+Elearning System is also Economically feasible with 0 Development 
+and Operating Charges as it is developed using open source technologies and the software is operated on Open 
+Source platform.
+\item {\bf {Legal feasibility}}: In this type of feasibility study, we 
+basically determine whether the project conflicts with legal 
+requirements, e.g. a data processing system must comply with the local 
+Data Protection Acts. But Elearning System has been developed with properly Licensed technologies. 
+Thus is the legal process.
+\item {\bf{Operational feasibility}}: Operational feasibility is a measure 
+of how well a project solves the problems, and takes advantage of the 
+opportunities identified during scope definition and how it satisfies 
+the requirements identified in the requirements analysis phase of system 
+development. All the operations performed in the system are very quick 
+and satisfy all the requirements.
+\item {\bf{Behaviour Feasibility}}: In this feasibility, we check about the 
+behavior of the proposed system software i.e. whether the proposed 
+project is user friendly or not, whether users can use the project 
+without any training because of the user friendliness or not. Elearning System is very user friendly as its users interact with it 
+through web.
+\end{itemize}
+
+\section{Software Requirement Analysis}
+A Software Requirements Analysis for a software system is a complete 
+description of the behaviour of a system to be developed. It includes 
+a set of use cases that describe all the interactions the users will 
+have with the software. In addition to use cases, the SRS also contains 
+non-functional requirements. Non-functional requirements are 
+requirements which impose constraints on the design or implementation.
+\begin{itemize}
+\item{\bf Purpose}: Elearning System is a web based software and the 
+main purpose of this project is to:
+\begin{enumerate}
+\item Reduce the time spent in daily class room activities.
+\item Make the Registration and Usage easier.
+\item Automatically notifying the students about the upcoming events and tests.
+\item Reduce the dependencies between people involved in the process.
+\item Increasing the understanding between the teachers and students.
+\item Keeping students up to date with all the work happening in class and also the future    events.
+\end{enumerate}
+\item{\bf General Description}: Elearning system is basically 
+designed for those Organisations or Institutes which gives different 
+types of work to all types of students. Keeping track of different 
+works done by different students and then getting all the reports of 
+the work done is not an easy job. To make these tasks easy with all 
+functions performed quickly, Elearning system will be quiet helpful.
+
+Administrator will be the super user of the application who will 
+configure system information such as adding new students/teachers and their 
+information or editing or deleting the old ones, managing students and teachers.
+
+It will be an Institute software, so it is distributed and data centric. 
+This Software is designed on the basis of web application architecture. 
+In this application, MySQL database will be used to store data related 
+to students, teachers, classes, events, institute, etc. Since 
+database is on Server, so any number of users can work simultaneously 
+and can share their data with each other. It is developed using PHP, HTML, CSS and J Query.
+\item{\bf Users of the System}
+\begin{enumerate} 
+\item Administrator : Administrator can add or update 
+(activate/inactivate) the details, and also can see information of all 
+members of institute and can see his or her information. New classes, subjects and departments can be added or the existing can also be updated.
+\item Teacher : As Teachers are directly related to students, so they 
+are able to add or update the details of students using this section. 
+Administrator can see all the students. Teachers can manage their 
+students and class only, and particular student can see his or her detail.
+\item Student : Students are the end users that benefit from the 
+Elearning System. A student can get information of all services 
+available. They can also view the upcoming events and also the important announcements
+from the teacher of the institute.
+\end{enumerate}
+\end{itemize}
+\subsection{Functional Requiremets}
+\begin{itemize}
+\item {\bf Specific Requirements}: This phase covers the whole requirements 
+for the system. After understanding the system we need the input data 
+to the system then we watch the output and determine whether the output 
+from the system is according to our requirements or not. So what we have 
+to input and then what we’ll get as output is given in this phase. This 
+phase also describe the software and non-function requirements of the 
+system.
+\item {\bf Input Requirements of the System}
+\begin{enumerate} 
+\item Student Details
+\item Teacher Details
+\item Department Details
+\item Class Details
+\item Downloadable Material 
+\end{enumerate}
+\vskip 0.5cm
+\item {\bf Output Requirements of the System}
+\begin{enumerate} 
+\item Interface for administrator to configure the system.
+\item Listing of all the services offered.
+\item Interface for students and teachers.
+\item Generation of Results, Grades, Downloadable Material,
+for students.
+\item Calculation of student progress.
+\item Generation of class calender and classmates list for student.
+\item Generation of the list of classmates of a particular student.
+\end{enumerate}
+\vskip 0.5cm
+\item {\bf Special User Requirements}
+\begin{enumerate} 
+\item Automatic Message Generation and Sending to the concerned person.
+\end{enumerate}
+\vskip 0.5cm
+\item {\bf Software Requirements}
+\begin{enumerate} 
+\item Programming language: PHP 5.4
+\item Web Languages: Html, J Query, CSS 
+\item Database: MySQL Database Server 5.1 
+\item Documentation: Doxygen 1.8.3
+\item Text Editor: Gedit, Notepad++, Sublime
+\item Operating System: Ubuntu 12.04 or up
+\item Web Server: Apache 2.4
+\end{enumerate}
+\vskip 0.5cm
+\subsection{Non functional requirements}
+\begin{enumerate} 
+\item Scalability: System should be able to handle a number of users. 
+For e.g., handling around hundred users at the same time.
+\item Usability: Simple user interfaces that a layman can understand.
+\item Speed: Speed of the system should be responsive i.e. Response to
+ a particular action should be available in short period of time. For 
+e.g., Updating the class tasks take few seconds for the changes if 
+the entry is not starred.
+\end{enumerate}
+\end{itemize}
