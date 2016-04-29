@@ -1,14 +1,17 @@
 \section{Overview}
-The drafting work can be automated and accelerated through the use of computer aided design systems. It may be applied for a wide variety of products in the field of automotive electronics, aerospace, naval, architecture, civil and other disciplines of engineering. CAD systems were originally used for automated drafting only. But now they also include three-dimensional modeling and computer simulated operations of the models. Sometimes, CAD is translated as computer assisted drafting, computer aided drafting or a similar phrase. Related acronyms are CADD which stands for Computer Aided design and Drafting, CAID for Computer Aided Industrial design, CAAD for Computer Aided Architectural design. All these terms are essentially synonymous, but there are some subtle differences in meaning and appliation.\\
 
-\noindent CAD is used to design, develop and optimize products, which can be goods used by end consumers or intermediate good used in other products. CAD is also extensively used in the design of tools and equipment required in the manufacturing process, and in the drafting and design and design of all types of buildings, ranging from small residential houses to the largest commercial or Industrial complexes. CAD enables designers to layout and to develop their work on a computer screen, print and save it for future editing, thus saving a lot of time on their drawings. CAD is mainly used for detailed engineering of 3D models and/or 2D drawings of physical components, but it is also used throughout the engineering process, form conceptual design and layout of products to definition of manufacturing methods of components. Rather thatn building prototypes and changing components to determine the effects of tolerance ranges, engineers can use CAD systems to simulate operation to determine loads and stresses. The major benefits of such systems include lower product development costs and a greatly shortened design cycle. The CAD systems running on workstations and mainframe computers are increasingly integrated with computer-aided manufacturing systems.
+CAD (computer-aided design) software is used by architects, engineers, drafters, artists, and others to create precision drawings or technical illustrations. CAD software can be used to create two-dimensional (2-D) drawings or three-dimensional (3-D) models.
 
+The drafting work can be automated and accelerated through the use of computer aided design systems. It may be applied for a wide variety of products in the field of automotive electronics, aerospace, naval, architecture, civil and other disciplines of engineering. CAD systems were originally used for automated drafting only. But now they also include three-dimensional modeling and computer simulated operations of the models. Sometimes, CAD is translated as computer assisted drafting, computer aided drafting or a similar phrase. Related acronyms are CADD which stands for Computer Aided design and Drafting, CAID for Computer Aided Industrial design, CAAD for Computer Aided Architectural design. All these terms are essentially synonymous, but there are some subtle differences in meaning and appliation.
+
+CAD is used to design, develop and optimize products, which can be goods used by end consumers or intermediate good used in other products. CAD is also extensively used in the design of tools and equipment required in the manufacturing process, and in the drafting and design and design of all types of buildings, ranging from small residential houses to the largest commercial or Industrial complexes. CAD enables designers to layout and to develop their work on a computer screen, print and save it for future editing, thus saving a lot of time on their drawings. CAD is mainly used for detailed engineering of 3D models and/or 2D drawings of physical components, but it is also used throughout the engineering process, form conceptual design and layout of products to definition of manufacturing methods of components. Rather thatn building prototypes and changing components to determine the effects of tolerance ranges, engineers can use CAD systems to simulate operation to determine loads and stresses. The major benefits of such systems include lower product development costs and a greatly shortened design cycle. The CAD systems running on workstations and mainframe computers are increasingly integrated with computer-aided manufacturing systems.
 
 \section{Introduction To Project} 
-\noindent Automated Building Drawing is a project for creating two-dimensional drawings. The main purpose or objective of the project is to make it usable even by the layman. The main target users are the Civil Engineers who want their plans to be printed on the sheets. As of now, they have to create the drawings with the use of paper and pencil. So to automate converting a particular drawing model to the print ready drawings, this project will be beneficial. The interface should be easy
+Automated Building Drawing is a project for creating two-dimensional drawings. The main purpose or objective of the project is to make it usable even by a layman. The main target users are the Civil Engineers who want their plans to be printed on the sheets. As of now, they have to create the drawings with the use of paper and pencil. So to automate converting a particular drawing model to the print ready drawings, this project will be beneficial. The interface should be easy
 to use and pretty intuitive. Because the interface is a thing that makes user experience better and to make the user use it.
-The Drawing module allows you to put your work on computer. That is, to put views of your
-models in a 2D window and to insert that window in a drawing, for example a sheet with a border, a wall and a circle and finally print that sheet. 
+The Drawing module allows you to put your work on computer. That is, to put views of your models in a 2D window and to insert that window in a drawing, for example a sheet with a border, a wall and a circle and finally print that sheet.
+
+The user will have to input the parameters like name of the entity it's specifications (like dimensions etc.) in an input file and that's it. Next, that data is parsed from the input file and then fed to the DXF entities functions. Hence, just in a few lines the design is generated. And it will take lesser time and efforts that working on a professional CAD software that requires more skills.
 
 
 \section{Objectives}
@@ -561,15 +564,6 @@ make
 sudo make install
 \end{verbatim}
 
-
-
-\subsection{Introduction to GitHub}
-\noindent GitHub is a Git repository web-based hosting service which offers all of the functionality of Git as well as adding many of its own features. Unlike Git which is strictly a command-line tool, Github provides a web-based graphical interface and desktop as well as mobile integration. It also provides access control and several collaboration features such as wikis, task management, and bug tracking and feature requests for every project.\\
-
-\noindent GitHub offers both paid plans for private repto handle everything from small to very large projects with speed and efficiency. ositories, and free accounts, which are usually used to host open source software projects. As of 2014, Github reports having over 3.4 million users, making it the largest code host in the world.\\
-
-\noindent GitHub has become such a staple amongst the open-source development community that many developers have begun considering it a replacement for a conventional resume and some employers require applications to provide a link to and have an active contributing GitHub account in order to qualify for a job.
-
 \subsection{What is Git?}
 Git is a distributed revision control and source code management (SCM) system with an emphasis on speed, data integrity, and support for distributed, non-linear workows. Git was initially designed and developed by Linus Torvalds for Linux  kernel development in 2005,  and has  since become the most widely adopted version   control   system  for software development.
 
@@ -592,58 +586,111 @@ Having a distributed architecture, Git is an example of a DVCS (hence Distribute
 As with most other distributed revision control systems, and unlike most clientserver systems, every Git working directory is a full-edged repository with complete history and full version- tracking capabilities, independent of network access or a central server. Like the Linux kernel, Git is free and open source software distributed under the terms of the GNU General Public License version 2 to handle everything from small to very large projects with speed and efficiency.
 Git is easy to learn and has a tiny footprint with lightning fast performance. It outclasses SCM tools like Subversion, CVS, Perforce, and ClearCase with features like cheap local branching, convenient staging areas, and multiple workows.
 
-\subsection{Installation of Git}
+\begin{itemize}
+	\item \textbf{Installation of Git}
 
 Installation of git is a very easy process.
 The current git version is: 2.0.4.
 Type the commands in the terminal:\\\\
 \emph{
-\$ sudo apt-get update\\\\
-\$ sudo apt-get install git\\\\}
+	\$ sudo apt-get update\\\\
+	\$ sudo apt-get install git\\\\}
 This will install the git on your pc or laptop.
 
-\subsection{Various Git Commands}
+\item \textbf{Various Git Commands}
 
 Git is the open source distributed version control system that facilitates GitHub activities on your laptop or desktop. The commonly used Git command line instructions are:-\\
 
-\subsection*{Create Repositories}
+\item \textbf{Create Repositories}
 \addcontentsline{toc}{subsection}{Create Repositories}
 Start a new repository or obtain from an exiting URL
 
 \begin{description}
-
-\item [\$ git init [ project-name]]\\
-Creates a new local repository with the specified name
-\item [\$ git clone [url]]\\
-Downloads a project and its entire version history
-
+	
+	\item [\$ git init [ project-name]]\\
+	Creates a new local repository with the specified name
+	\item [\$ git clone [url]]\\
+	Downloads a project and its entire version history
+	
 \end{description}
 
 
-\subsection*{Make Changes}
+\item \textbf{Make Changes}
 \addcontentsline{toc}{subsection}{Make Changes}
 Review edits and craft a commit transaction
 
 \begin{description}
-
-\item [\$ git status] \leavevmode \\
-Lists all new or modified files to be committed
-
-\item [\$ git diff] \leavevmode \\
-Shows file differences not yet staged
-
-\item [\$ git add [file]]\\
-Snapshots the file in preparation for versioning
-
-\item [\$ git reset [file]]\\
-Unstages the file, but preserve its contents
-
-\item [\$ git commit -m "[descriptive message]"]\\
-Records file snapshots permanently in version history
-
+	
+	\item [\$ git status] \leavevmode \\
+	Lists all new or modified files to be committed
+	
+	\item [\$ git diff] \leavevmode \\
+	Shows file differences not yet staged
+	
+	\item [\$ git add [file]]\\
+	Snapshots the file in preparation for versioning
+	
+	\item [\$ git reset [file]]\\
+	Unstages the file, but preserve its contents
+	
+	\item [\$ git commit -m "[descriptive message]"]\\
+	Records file snapshots permanently in version history
+	
 \end{description}
 
-\section{FreeCAD}
+\end{itemize}
+
+\subsection{Introduction to GitHub}
+\noindent GitHub is a Git repository web-based hosting service which offers all of the functionality of Git as well as adding many of its own features. Unlike Git which is strictly a command-line tool, Github provides a web-based graphical interface and desktop as well as mobile integration. It also provides access control and several collaboration features such as wikis, task management, and bug tracking and feature requests for every project.\\
+
+\noindent GitHub offers both paid plans for private repto handle everything from small to very large projects with speed and efficiency. ositories, and free accounts, which are usually used to host open source software projects. As of 2014, Github reports having over 3.4 million users, making it the largest code host in the world.\\
+
+\noindent GitHub has become such a staple amongst the open-source development community that many developers have begun considering it a replacement for a conventional resume and some employers require applications to provide a link to and have an active contributing GitHub account in order to qualify for a job.
+
+\subsection{Introduction to GitLab}
+What is GitLab? GitLab is an online Git repository manager with a wiki, issue tracking, CI and CD. It is a great way to manage git repositories on a centralized server. GitLab gives you complete control over your repositories or projects and allows you to decide whether they are public or private for free.
+
+\subsubsection{GitLab.com}
+\begin{itemize}
+	\item GitLab.com hosts your (private) software projects for free.
+	\item It offers free public and private repositories, issue-tracking and wikis.
+	\item It runs GitLab Enterprise Edition and GitLab CI.
+	\item No installation required, you can just sign up for a free account. Support Package:
+	\item Free subscribers can use the GitLab.com Support Forum if they have questions.
+	\item GitLab.com Bronze Support will let you email support directly for timely, personal and private answers. This costs \$9.99 per user per year for next-business-day response time and is available in packs of 20 users.
+\end{itemize}
+
+\subsubsection{GitLab Community Edition (CE)}
+\begin{itemize}
+	\item Free, self hosted application where you can get support from the Community
+	\item Feature rich: Git repository management, code reviews, issue tracking, activity feeds and wikis. It comes with GitLab CI for continuous integration and delivery.
+	\item Open Source: MIT licensed, community driven, 700+ contributors, inspect and modify the source, easy to integrate into your infrastructure.
+	\item Scalable: support 25,000 users on one server or a highly available active/active cluster.
+	\item Merge requests with line-by-line comments, CI and issue tracker integrations.
+\end{itemize}
+
+\subsubsection{GitLab Enterprise Edition (EE)}
+\begin{itemize}
+	\item Self hosted application that comes with additional support.
+	\item Builds on top of the Community Edition and includes extra features mainly aimed at organizations with more than 100 users.
+	\item It has LDAP group sync, audit logs and multiple roles.
+	\item It includes deeper authentication and authorization integration, has fine-grained workflow management, has extra server management options and it integrates with your tool stack.
+	\item GitLab EE runs on your servers.
+\end{itemize}
+
+\subsubsection{GitLab Continuous Integration (CI)}
+\begin{itemize}
+	\item Free, self hosted application that integrates with GitLab CE/EE. Also availble as SaaS at ci.gitlab.com.
+	\item Easy to set up since it is included in Omnibus packages of GitLab or use it for free on ci.gitlab.com.
+	\item Beautiful interface with a clear menu structure.
+	\item Performant and stable, as tests run distributed on separate machines.
+	\item Will help you receive test results faster with each commit running in parallel on multiple jobs.
+	\item Free to use and completely open source. All CI code is MIT licensed.
+\end{itemize}
+
+
+
+\subsection{FreeCAD}
 FreeCAD is a general purpose feature-based, parametric 3D modeler for CAD, MCAD, CAx, CAE and PLM, aimed directly at mechanical engineering and product design but also fits a wider range of uses in engineering, such as architecture or other engineering specialties. It is 100\% Open Source (LGPL2+ license) and extremely modular, allowing for very advanced extension and customization.
 
 FreeCAD is based on OpenCasCade, a powerful geometry kernel, features an Open Inventor-compliant 3D scene representation model provided by the Coin 3D library, and a broad Python API. The interface is built with Qt. FreeCAD runs exactly the same way on Windows, Mac OSX, BSD and Linux platforms.
@@ -658,7 +705,7 @@ Bug tracker: http://www.freecadweb.org/tracker
 
 Git repository: https://github.com/FreeCAD/FreeCAD
 
-\subsection{Installing}
+\subsubsection{Installing}
 
 Precompiled (installable) packages are available for Windows and Mac on the releases page at https://github.com/FreeCAD/FreeCAD/releases
 
@@ -938,7 +985,7 @@ If you feel bold enough to dive in the code, you could take advantage to build a
 \end{itemize}
 \end{itemize}
 
-\section{Introduction to \LaTeX}
+\subsection{Introduction to \LaTeX}
 \begin{figure}[ht]
 \centering
 \includegraphics[scale=0.2]{images/latex.png}
@@ -980,7 +1027,7 @@ Because the \TeX{} formatting commands are very low-level, it is usually
 much simpler for end-users to use \LaTeX{}.
 
 
-\subsection{Typesetting}
+\subsubsection{Typesetting}
 \LaTeX{} is based on the idea that authors should be able to focus on 
 the content of what they are writing without being distracted by its 
 visual presentation. in preparing a \LaTeX{} document, the author 
@@ -1003,7 +1050,7 @@ manual typesetting adjustments where needed.
 \end{document}
 \end{verbatim}
 
-\subsection{Installing \LaTeX{} on System}
+\subsubsection{Installing \LaTeX{} on System}
 Installation of \LaTeX{} on personal system is quite easy. As i have used \LaTeX{} on Ubuntu 13.04 so i am discussing the installation steps for Ubuntu 13.04 here:
 \begin{itemize}
 \item Go to terminal and type\\\\
@@ -1023,7 +1070,7 @@ After compiling it type command\\\\
 To see output pdf file. 
 \end{itemize}
 
-\subsection{Making Graphics in \LaTeX{}}
+\subsubsection{Making Graphics in \LaTeX{}}
 \LaTeX{} s also know popularly for making complex graphics. One such example is shown below here:\\
 \begin{verbatim}
 \documentclass{article}
@@ -1069,7 +1116,7 @@ if (all) {
 %\end{figure}
 \LaTeX{} with just invoking few additional packages.
 
-\subsection{Pdfscreen \LaTeX{}}
+\subsubsection{Pdfscreen \LaTeX{}}
 There are some packages that can help to have unified document using \LaTeX{}. Example of such a package is pdfscreen that let the user view it’s document in two forms-print and screen. Print for hard copy and screen for viewing your document on screen. Download this package from www.ctan.org/tex-archive/macros/latex/contrib/pdfscreen/.\\
 Then install it using above mention method.\\
 
@@ -1081,7 +1128,7 @@ Just changing print to screen gives an entirely different view. But for working 
 \noindent Whereas comments package selectively include/excludes portions of text. The comment package allows you to declare areas of a document to be included or excluded. One need to make these declarations in the preamble of your file. The package uses a method for exclusion that is pretty robust, and can cope with ill-formed bunches of text.\\
 
 \noindent So these extra packages needed to be installed on system for the proper working of pdfscreen package.
-\section{Web based graphic generation using \LaTeX{}}
+\subsubsection{Web based graphic generation using \LaTeX{}}
 \LaTeX{} is also useful when there is need of generating the graphics from browser. For
 example to draw a circle by just entering its radius in html input box. So this kind
 A
@@ -1101,7 +1148,7 @@ that script recompiles the the tex file and make it available for user.\\
 are available to user and user can download the graphics so produced. Hence graphics
 can be generated in \LaTeX{} through web interface.
 
-\section{Doxygen}
+\subsection{Doxygen}
 \begin{figure}[h]
 	\centering \includegraphics[scale=1]{images/doxygen.jpg}
 \end{figure}
@@ -1125,7 +1172,7 @@ To analyse an existing piece of software it is useful to cross-reference a (docu
 
 Doxygen is developed under Mac OS X and Linux, but is set-up to be highly portable. As a result, it runs on most other Unix flavors as well. Furthermore, executables for Windows are available.
 
-\subsection{Features of Doxygen}
+\subsubsection{Features of Doxygen}
 \begin{itemize}
 	\item Requires very little overhead from the writer of the documentation. 
 	Plain text will do, Markdown is support, and for more fancy or structured 
@@ -1143,7 +1190,7 @@ Doxygen is developed under Mac OS X and Linux, but is set-up to be highly portab
 	the layout of each page.
 	\item Can cope with large projects easily.
 \end{itemize}
-\subsection{Installation of Doxygen}
+\subsubsection{Installation of Doxygen}
 Doxygen can be installed using following commands:\\
 
 \hspace{4pt} \$ git clone https://github.com/doxygen/doxygen.git\\ 
@@ -1153,7 +1200,28 @@ Doxygen can be installed using following commands:\\
 \hspace{4pt} \$ ./configure\\
 
 \hspace{4pt} \$ make \\
-\newpage
+%\newpage
+
+\subsection{GitHub vs. GitLab}
+Like GitHub, GitLab is a web-based repository manager that lets teams collaborate on code, duplicate code to safely create and edit new projects, then merge finished code into existing projects. GitLab is written in the Ruby programming language and includes a Wiki and issue-tracking features. It has three separate versions: GitLab Community Edition (CE), Enterprise Edition (EE), and a GitLab-hosted version, GitLab.com. It’s got over 700 contributors and is used by major organizations like Alibaba, NASA, CERN, and more.
+
+Its permissions, branch protection, and authentication features are what really make it stand out. Teams can secure projects on a more granular level, and projects are kept even safer while they’re being worked on, which we cover in more detail below.
+
+\subsubsection{THE GITLAB ADVANTAGE}
+	
+	GitLab has everything GitHub has, and more—giving teams increased control over their repositories. Its extra features include:
+	
+	\begin{itemize}
+		\item A convenient user interface enables users to access everything from one screen: projects, latest projects, users, latest users, groups, and stats.
+		\item Settings allow users to control whether a repository is public or private.
+		\item “Snippet support” lets users share small pieces of code from a project, without sharing the whole project.
+		\item Protected branches are a new way to keep code safe. They allow users to set higher permissions on a project, so only certain people are able to push, force push, or delete code in a branch.
+		\item Authentication levels take this security a step further, allowing users to give people access beyond a read/write level. For example, you can give a team member access to issue tracking without having to give them access to the code itself.
+		\item Improved milestones enable you to set milestones at a group level, not just a developer-specific level. Developers can get insight into the whole team’s scope and view the entire project’s milestones, not just their own.
+		\item With the “Work in Progress” status, developers can label a project “WIP” to let collaborators know that the code is unfinished. This prevents it from accidentally getting merged with other code before it’s finished.
+		\item You can attach files like comments to any communications in GitLab.
+	
+\end{itemize}
 
 
 \section{Implementation}

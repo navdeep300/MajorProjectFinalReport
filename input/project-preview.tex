@@ -2,20 +2,30 @@
 For the CAD drawings, there are plenty of softwares available there in the market including proprietary softwares such AutoCAD, STAAD.Pro and open-source ones like LibreCAD, OpenSCAD, FreeCAD etc. They are high-end softwares that require Designing knowledge and some computer usage knowledge. Hence, a layman that needs a small work to be done, will have to learn its usage effectively and some extra efforts for doing that. Hence this project will let them use it like they are making a wish for something to be done without any efforts.
 
 
+The user will have to input the parameters like name of the entity it's specifications (like dimensions etc.) in an input file and that's it. Next, that data is parsed from the input file and then fed to the DXF entities functions. Hence, just in a few lines the design is generated. And it will take lesser time and efforts that working on a professional CAD software that requires more skills.
+
+
+
 \section{Problems}
 It is difficult to operate high-end CAD software for a simple layman as he does not have  much knowledge of the computer system because they are not connected to the internet in any ways. Giving training to these peoples is not easy as there is not so much manpower available to provide training and it will be expensive also. By not using the computer softwares instead of traditional drawing methods, Resources are being wasted 
 on manually making the drawings at various levels.
 Also it is very difficult to make the drawing design using the traditional methods these days because of the evolving computer CAD softwares.
 
+Some problems that were faced during the making of this project includes the following. First the library chosen was dxflib. It is a good library having much support of entities by QCAD. But it is lagging as per the version in DXF specifications. And moreover, it doesn't support reading the DWG format files. Then we were introduced to a new library, libdxfrw which is being maintained by the LibreCAD developers. We found it a little hard to start with as compared to dxflib. But it is more updated library and supports reading the DXF upto the latest version. It also supports reading DWG file format. Hence shifting to a new library always take more efforts and time.
+
 \section{Solution Description}
-The layman is given a hand-held terminal working on latest technologies. Whenever a layman or any person related to Civil Engineering need to make a drawing of any building or other entity, then he/she is asked to give the entity or the drawing related details. On the basis of these details, the software will be able to draw the design of the specified architecture.  The software prints the specified drawing and the drawing file is opened in the LibreCad.
+The layman is given a hand-held terminal working on latest technologies. Whenever a layman or any person related to Civil Engineering need to make a drawing of any building or other entity, then he/she is asked to give the entity or the drawing related details. On the basis of these details, the software will be able to draw the design of the specified architecture.  The software prints the specified drawing and the drawing file is opened in the LibreCAD.
 Moreover, this system will also enable the layman to know how the system works and the how the output is generated using the software and how the drawing is made.
+
+Basically, there are two modes to work. One can be for the layman users or those who need simple quick designs. That can be done in the input file given to the user. The user will just need to type in the entity name, it's dimensions and additional properties like layer etc. and that's it. Another mode can be for advanced users that needs more complex designs that are repetitive. Those who know programming can work directly in the EntityWriter.cpp file and show their creativity using loops etc.
 
 \section{Key Features}
 \begin{itemize}
-\item Parse the input entity values into the system and produces a relavent output file with entity name and parameters.
-\item Export the output file in dxf format which can be imported into the CAD softwares like LibreCad.
-\item Enables simplification of drawing work for the civil engineers and the layman which otherwise may end up taking more time using the traditional drawing methods. 
+\item Parse the input entity values into the system and produces a relevant output file with entity name and parameters.
+\item Export the output file in dxf format which can be imported into the CAD softwares like LibreCAD.
+\item Enables simplification of drawing work for the civil engineers and the layman which otherwise may end up taking more time using the traditional drawing methods.
+\item Supports latest entities according to the DXF specifications.
+\item Let the users create more complex designs using the C++ programming. 
 \end{itemize}
 \section{Benefits}
 \begin{itemize}
