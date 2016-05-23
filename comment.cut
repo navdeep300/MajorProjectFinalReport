@@ -6,6 +6,9 @@
 \usepackage{wrapfig}
 \usepackage{fancyhdr}
 \usepackage{verbatim}
+\usepackage{scrextend}
+
+%\addtokomafont{labelinglabel}{\sffamily}
 %Options: Sonny, Lenny, Glenn, Conny, Rejne, Bjarne, Bjornstrup
 \usepackage[Glenn]{fncychap}
 \lhead{\large\bfseries Automated Building Drawings}
